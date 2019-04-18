@@ -1,7 +1,7 @@
 @echo off
 call npm init -y
-call npm install --save-dev typescript webpack ts-loader webpack-cli
-call npm install --save babylonjs@4.0.0-beta.6
+call cnpm install --save-dev typescript webpack ts-loader webpack-cli
+call cnpm install --save babylonjs@4.0.0-beta.6
 
 @echo const path = require("path");                       >> webpack.config.js
 @echo module.exports = {                                  >> webpack.config.js
