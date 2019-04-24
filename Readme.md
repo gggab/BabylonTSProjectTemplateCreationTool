@@ -4,3 +4,7 @@
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
+
+### 2019年4月24日更新WPF版本的工具
+1. 编译好的WPF版本工具在build压缩包中
+2. bat 版本的工具将放到了dev_bat分支中
