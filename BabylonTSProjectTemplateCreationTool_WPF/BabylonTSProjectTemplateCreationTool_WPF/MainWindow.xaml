@@ -1,0 +1,25 @@
+﻿<Window x:Class="BabylonTSProjectTemplateCreationTool_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BabylonTSProjectTemplateCreationTool_WPF"
+        mc:Ignorable="d"
+        Title="新建Babylon TS开发工程" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/16pic_4760725_b.jpg"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="Create project" Margin="455,302,0,0" Width="116" Height="35" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" BorderBrush="Black" Grid.Column="1"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="116,222,0,0" TextWrapping="WrapWithOverflow"  Text="Enter project path" VerticalAlignment="Top" Width="269" TextChanged="TextBox_TextChanged" FontSize="18" TextDecorations="{x:Null}" BorderBrush="#FFDFEEF5" FontFamily="Palatino Linotype" Background="White" Foreground="#FF536A93" Grid.Column="1"/>
+        <Label x:Name="projectPath" Content="Location" HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Height="22" Width="101" FontSize="10" Opacity="0.5" Grid.Column="1"/>
+        <Button x:Name="choosefile" Content="..." HorizontalAlignment="Left" Margin="385,222,0,0" VerticalAlignment="Top" Width="28" Click="Choosefile_Click" RenderTransformOrigin="1.538,-2.211" Height="30" Opacity="0.9" Background="White" BorderBrush="White" Foreground="#FF53A6DA" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="projectPath_Copy" Content="Project name" HorizontalAlignment="Left" Margin="116,142,0,0" VerticalAlignment="Top" Height="22" Width="101" FontSize="10" Opacity="0.5" Grid.Column="1"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="30" Margin="116,164,0,0" TextWrapping="WrapWithOverflow"  Text="New project name" VerticalAlignment="Top" Width="297" FontSize="18" TextDecorations="{x:Null}" TextChanged="TextBox_Copy_TextChanged" BorderBrush="#FFC3C3C3" FontFamily="Palatino Linotype" Background="White" Foreground="#FF3B6AAE" SelectionBrush="#FF799EBB" Grid.Column="1"/>
+
+    </Grid>
+</Window>
